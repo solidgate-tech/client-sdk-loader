@@ -32,13 +32,13 @@ export default interface InitConfig {
   googlePayButtonParams?: Partial<{
     enabled: false
     containerId: string
-    color: 'default' | 'black' | 'white'
-    type: 'plain' | 'buy'
+    color: string
+    type: string
   }>
   applePayButtonParams?: Partial<{
-    enabled?: false
+    enabled: false
     containerId: string
-    color: 'white-outline' | 'white' | 'black' | 'automatic'
-    type: 'plain'
+    color: string
+    type: string
   }>
 }
