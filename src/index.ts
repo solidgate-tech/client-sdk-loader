@@ -14,6 +14,7 @@ import InteractionMessage from './interfaces/messages/InteractionMessage'
 import Message from './interfaces/messages/Message'
 import OrderShort from './interfaces/OrderShort'
 import OrderStatus from './interfaces/OrderStatus'
+import ClientSdkInstance from './interfaces/ClientSdkInstance'
 
 import MessageType from './enums/MessageType'
 import AdditionalField from './enums/AdditionalField'
@@ -37,12 +38,13 @@ export {
   FieldName,
   CardBrand,
   SdkLoader,
-  FormType,
+  FormType
 }
 
 export type {
   OrderStatusMessage,
   InteractionMessage,
+  ClientSdkInstance,
   MountedMessage,
   SuccessMessage,
   ResizeMessage,
@@ -56,5 +58,5 @@ export type {
   InitConfig,
   OrderShort,
   ClientSdk,
-  Message,
+  Message
 }
