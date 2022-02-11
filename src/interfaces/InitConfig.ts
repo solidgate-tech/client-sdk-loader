@@ -27,7 +27,7 @@ export default interface InitConfig {
     secureBrands: SecureBrand[]
     allowSubmit: boolean
     allowedAdditionalFields: AdditionalField[]
-    'font-family': string
+    googleFontLink: string
   }>
   googlePayButtonParams?: Partial<{
     enabled: false
