@@ -3,7 +3,8 @@ enum AdditionalField {
   Curp = 'CURP',
   Cpf = 'CPF',
   Dni = 'DNI',
-  Pin = 'PIN'
+  Pin = 'PIN',
+  CardHolder = 'CARD_HOLDER'
 }
 
 export default AdditionalField
