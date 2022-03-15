@@ -17,7 +17,6 @@ import OrderStatus from './interfaces/OrderStatus'
 import ClientSdkInstance from './interfaces/ClientSdkInstance'
 
 import MessageType from './enums/MessageType'
-import AdditionalField from './enums/AdditionalField'
 import FieldName from './enums/FieldName'
 import CardBrand from './enums/CardBrand'
 import SecureBrand from './enums/SecureBrand'
@@ -31,7 +30,6 @@ import SdkLoader from './services/SdkLoader'
 export {
   InteractionTargetType,
   InteractionType,
-  AdditionalField,
   PayableEntity,
   SecureBrand,
   MessageType,

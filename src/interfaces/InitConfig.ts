@@ -1,7 +1,6 @@
 import FormType from '../enums/FormType'
 import CardBrand from '../enums/CardBrand'
 import SecureBrand from '../enums/SecureBrand'
-import AdditionalField from '../enums/AdditionalField'
 
 export default interface InitConfig {
   merchantData: {
@@ -26,7 +25,6 @@ export default interface InitConfig {
     cardBrands: CardBrand[]
     secureBrands: SecureBrand[]
     allowSubmit: boolean
-    allowedAdditionalFields: AdditionalField[]
     googleFontLink: string
   }>
   googlePayButtonParams?: Partial<{
