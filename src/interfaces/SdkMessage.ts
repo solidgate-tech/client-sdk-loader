@@ -4,9 +4,12 @@ import FailMessage from './messages/FailMessage'
 import OrderStatusMessage from './messages/OrderStatusMessage'
 import ResizeMessage from './messages/ResizeMessage'
 import SuccessMessage from './messages/SuccessMessage'
-import Message from './messages/Message'
 import SubmitMessage from './messages/SubmitMessage'
-import InteractionMessage from "./messages/InteractionMessage"
+import InteractionMessage from './messages/InteractionMessage'
+import CardMessage from './messages/CardMessage'
+import VerifyMessage from './messages/VerifyMessage'
+import RedirectMessage from './messages/RedirectMessage'
+import CustomStylesAppendedMessage from './messages/CustomStylesAppendedMessage'
 
 import MessageType from '../enums/MessageType'
 
@@ -19,9 +22,10 @@ interface SdkMessage {
   [MessageType.Success]: SuccessMessage
   [MessageType.Submit]: SubmitMessage
   [MessageType.Interaction]: InteractionMessage
-  [MessageType.Verify]: Message<MessageType.Verify>
-  [MessageType.Redirect]: Message<MessageType.Redirect>
-  [MessageType.CustomStylesAppended]: Message<MessageType.CustomStylesAppended>
+  [MessageType.Card]: CardMessage
+  [MessageType.Verify]: VerifyMessage
+  [MessageType.Redirect]: RedirectMessage
+  [MessageType.CustomStylesAppended]: CustomStylesAppendedMessage
 }
 
 export default SdkMessage

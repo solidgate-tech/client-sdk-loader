@@ -9,7 +9,8 @@ enum MessageType {
   Verify = 'verify',
   Interaction = 'interaction',
   Submit = 'submit',
-  CustomStylesAppended = 'customStylesAppended'
+  CustomStylesAppended = 'customStylesAppended',
+  Card = 'card'
 }
 
 export default MessageType
