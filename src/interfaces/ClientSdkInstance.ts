@@ -11,7 +11,7 @@ export default interface ClientSdkInstance {
     event: T,
     callback: (e: MessageEvent<SdkMessage[T]>) => void
   ): void
-  unsubcribe(messageType: MessageType): void
+  unsubscribe(messageType: MessageType): void
   unsubscribeAll(): void
   submit(): void
 }
