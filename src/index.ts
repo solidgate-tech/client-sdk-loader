@@ -11,6 +11,11 @@ import ResizeMessage from './interfaces/messages/ResizeMessage'
 import SuccessMessage from './interfaces/messages/SuccessMessage'
 import SubmitMessage from './interfaces/messages/SubmitMessage'
 import InteractionMessage from './interfaces/messages/InteractionMessage'
+import RedirectMessage from './interfaces/messages/RedirectMessage'
+import VerifyMessage from './interfaces/messages/VerifyMessage'
+import CustomStylesAppendedMessage from './interfaces/messages/CustomStylesAppendedMessage'
+import CardMessage from './interfaces/messages/CardMessage'
+
 import Message from './interfaces/messages/Message'
 import OrderShort from './interfaces/OrderShort'
 import OrderStatus from './interfaces/OrderStatus'
@@ -24,11 +29,13 @@ import FormType from './enums/FormType'
 import PayableEntity from './enums/PayableEntity'
 import InteractionType from './enums/InteractionType'
 import InteractionTargetType from './enums/InteractionTargetType'
+import AdditionalFieldName from './enums/AdditionalFieldName'
 
 import SdkLoader from './services/SdkLoader'
 
 export {
   InteractionTargetType,
+  AdditionalFieldName,
   InteractionType,
   PayableEntity,
   SecureBrand,
@@ -40,16 +47,20 @@ export {
 }
 
 export type {
+  CustomStylesAppendedMessage,
   OrderStatusMessage,
   InteractionMessage,
   ClientSdkInstance,
+  RedirectMessage,
   MountedMessage,
   SuccessMessage,
+  VerifyMessage,
   ResizeMessage,
   SubmitMessage,
   ErrorMessage,
   UpdateConfig,
   FailMessage,
+  CardMessage,
   OrderStatus,
   Transaction,
   SdkMessage,
