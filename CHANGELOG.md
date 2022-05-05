@@ -1,6 +1,11 @@
-**1.3.0**
+**1.3.3**
+
+Added license
 
 ***
+
+**1.3.0**
+
 
 - Added **AdditionalFields** enum
 - Fixed types which controlling labels visibility (like **initConfig.formParams.cardNumberLabel**)
