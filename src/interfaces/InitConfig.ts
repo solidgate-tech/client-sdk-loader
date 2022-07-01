@@ -18,6 +18,7 @@ export default interface InitConfig {
   formParams?: Partial<
     {
       enabled: false
+      autoFocus: boolean
       submitButtonText: string
       isCardHolderVisible: boolean
       headerText: string
