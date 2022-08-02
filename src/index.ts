@@ -30,6 +30,7 @@ import PayableEntity from './enums/PayableEntity'
 import InteractionType from './enums/InteractionType'
 import InteractionTargetType from './enums/InteractionTargetType'
 import AdditionalFieldName from './enums/AdditionalFieldName'
+import FormButtonType from './enums/FormButtonType'
 
 import SdkLoader from './services/SdkLoader'
 
@@ -37,6 +38,7 @@ export {
   InteractionTargetType,
   AdditionalFieldName,
   InteractionType,
+  FormButtonType,
   PayableEntity,
   SecureBrand,
   MessageType,

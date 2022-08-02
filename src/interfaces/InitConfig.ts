@@ -1,6 +1,7 @@
 import FormType from '../enums/FormType'
 import CardBrand from '../enums/CardBrand'
 import SecureBrand from '../enums/SecureBrand'
+import FormButtonType from '../enums/FormButtonType'
 import AdditionalFieldName from '../enums/AdditionalFieldName'
 
 export default interface InitConfig {
@@ -21,6 +22,7 @@ export default interface InitConfig {
       autoFocus: boolean
       submitButtonText: string
       isCardHolderVisible: boolean
+      buttonType: FormButtonType
       headerText: string
       titleText: string
       formTypeClass: FormType
