@@ -1,3 +1,9 @@
+**1.5.1**
+
+Removed **mir** card brand support
+
+***
+
 **1.5.0**
 
 Added **formParams.buttonType** config param
