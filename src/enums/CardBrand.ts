@@ -9,7 +9,8 @@ export enum CardBrand {
   Discover = 'discover',
   Aura = 'aura',
   Elo = 'elo',
-  Hipercard = 'hipercard'
+  Hipercard = 'hipercard',
+  CartesBancaires = 'cartes-bancaires'
 }
 
 export default CardBrand

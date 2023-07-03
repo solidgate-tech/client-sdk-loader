@@ -1,3 +1,9 @@
+**1.6.0**
+
+Added  **Cartes Bancaires** card brand support
+
+***
+
 **1.5.1**
 
 Removed **mir** card brand support
