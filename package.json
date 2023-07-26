@@ -1,9 +1,9 @@
 {
   "name": "@solidgate/client-sdk-loader",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "license": "Apache-2.0",
   "description": "Solidgate client sdk loader",
-  "repository": "https://bitbucket.org/solidgate/client-sdk-loader",
+  "repository": "https://github.com/solidgate-tech/client-sdk-loader",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

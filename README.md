@@ -13,7 +13,7 @@ import { SDKLoader } from "@solidgate/client-sdk-loader"
 
 /**
  * Configuration, as it described here
- * https://dev.solidgate.com/developers/documentation/solid-payment-form
+ * https://docs.solidgate.com/payments/integrate/payment-form/create-your-payment-form/
  */
 const data = {
   merchantData: {

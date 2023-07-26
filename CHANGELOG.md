@@ -1,3 +1,9 @@
+**1.6.1**
+
+Moved mirror repository to github, fix README.MD link to new documentation
+
+***
+
 **1.6.0**
 
 Added  **Cartes Bancaires** card brand support
