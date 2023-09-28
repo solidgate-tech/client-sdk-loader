@@ -34,7 +34,17 @@ export default interface InitConfig {
       cardNumberLabel: string
       cardCvvLabel: string
       cardExpiryDateLabel: string
-    } & Record<`${AdditionalFieldName}Label`, string>
+      zipLabel: string
+      emailLabel: string
+      zipCodeLabel: string
+      cardNumberPlaceholder: string
+      cardCvvPlaceholder: string
+      cardExpiryDatePlaceholder: string
+      zipPlaceholder: string
+      emailPlaceholder: string
+      zipCodePlaceholder: string
+    } & Record<`${AdditionalFieldName}Label`, string> &
+      Record<`${AdditionalFieldName}Placeholder`, string>
   >
   googlePayButtonParams?: Partial<{
     allowedAuthMethods:
