@@ -3,9 +3,11 @@ import UpdateConfig from './UpdateConfig'
 import SdkMessage from './SdkMessage'
 
 import MessageType from '../enums/MessageType'
+import { ResignFormConfig, ResignRequest } from './ResignConfig'
 
 export default interface ClientSdkInstance {
   init(config: InitConfig): Promise<void>
+  resign(request: ResignRequest, config?: ResignFormConfig): Promise<ClientSdkInstance>
   update(config: UpdateConfig): Promise<void>
   on<T extends MessageType>(
     event: T,

@@ -15,6 +15,7 @@ import RedirectMessage from './interfaces/messages/RedirectMessage'
 import VerifyMessage from './interfaces/messages/VerifyMessage'
 import CustomStylesAppendedMessage from './interfaces/messages/CustomStylesAppendedMessage'
 import CardMessage from './interfaces/messages/CardMessage'
+import { ResignRequest, ResignFormConfig } from './interfaces/ResignConfig'
 
 import Message from './interfaces/messages/Message'
 import OrderShort from './interfaces/OrderShort'
@@ -67,6 +68,8 @@ export type {
   Transaction,
   SdkMessage,
   InitConfig,
+  ResignRequest,
+  ResignFormConfig,
   OrderShort,
   ClientSdk,
   Message

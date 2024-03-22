@@ -1,3 +1,9 @@
+**1.7.0**
+
+Added resign form initialization method and corresponding types
+
+***
+
 **1.6.2**
 
 Added labels, placeholders types, fixed error type
