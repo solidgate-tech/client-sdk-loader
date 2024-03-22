@@ -1,6 +1,7 @@
 **1.7.0**
 
-Added resign form initialization method and corresponding types
+- Added **resign** form initialization method and corresponding types
+- Updated ```UpdateConfig```  type to enable support for the partial form update
 
 ***
 
