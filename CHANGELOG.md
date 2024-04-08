@@ -1,3 +1,21 @@
+**1.8.0**
+
+Add new card brands to `InitConfig.formParams.cardBrands`:
+
+- Rupay
+- BC Card
+- UnionPay
+- Dankort
+- GPN Card
+- Troy
+- Thai Payment Network
+- MADA
+- Bancontact
+- Interac
+- Bajaj
+
+***
+
 **1.7.0**
 
 - Added **resign** form initialization method and corresponding types

@@ -10,7 +10,18 @@ export enum CardBrand {
   Aura = 'aura',
   Elo = 'elo',
   Hipercard = 'hipercard',
-  CartesBancaires = 'cartes-bancaires'
+  CartesBancaires = 'cartes-bancaires',
+  Rupay = 'rupay',
+  BCCard = 'bc-card',
+  UnionPay = 'unionpay',
+  Dankort = 'dankort',
+  GPNCard = 'gpn-card',
+  Troy = 'troy',
+  ThaiPaymentNetwork = 'thai-payment-network',
+  MADA = 'mada',
+  Bancontact = 'bancontact',
+  Interac = 'interac',
+  Bajaj = 'bajaj'
 }
 
 export default CardBrand
