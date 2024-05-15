@@ -1,3 +1,7 @@
+**1.8.1**
+Update Order Status error interface:
+ - `error.message: string` -> `error.messages: string[]`
+
 **1.8.0**
 
 Add new card brands to `InitConfig.formParams.cardBrands`:

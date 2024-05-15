@@ -18,7 +18,7 @@ export default interface OrderStatus {
   transaction?: Transaction
   error?: {
     code: string
-    message: string
+    messages: string[]
     recommended_message_for_user?: string
   }
   three_ds?: {
