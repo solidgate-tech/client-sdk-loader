@@ -7,7 +7,10 @@ import { ResignFormConfig, ResignRequest } from './ResignConfig'
 
 export default interface ClientSdkInstance {
   init(config: InitConfig): Promise<void>
-  resign(request: ResignRequest, config?: ResignFormConfig): Promise<ClientSdkInstance>
+  resign(
+    request: ResignRequest,
+    config?: ResignFormConfig
+  ): Promise<ClientSdkInstance>
   update(config: UpdateConfig): Promise<void>
   on<T extends MessageType>(
     event: T,

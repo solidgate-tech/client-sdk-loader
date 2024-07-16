@@ -1,3 +1,9 @@
+**1.9.0**
+
+SSR compatability
+
+***
+
 **1.8.1**
 Update Order Status error interface:
  - `error.message: string` -> `error.messages: string[]`

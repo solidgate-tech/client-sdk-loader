@@ -11,7 +11,13 @@ export default class SdkLoader {
 
   static #loadAttempt: Promise<ClientSdk> | null = null
 
-  static load (): Promise<ClientSdk> {
+  static load (): Promise<ClientSdk | null> {
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      // Resolve to null when imported server side. This makes the module
+      // safe to import in an isomorphic code base.
+      return Promise.resolve(null)
+    }
+
     if (window.PaymentFormSdk) {
       return Promise.resolve(window.PaymentFormSdk)
     }
@@ -28,7 +34,7 @@ export default class SdkLoader {
         script.src = this.#CloudfrontSrc
         script.id = 'solid-payment-form-source'
 
-        script.onerror = e => {
+        script.onerror = (e) => {
           this.#loadAttempt = null
           reject(e)
         }
