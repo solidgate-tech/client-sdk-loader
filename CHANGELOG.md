@@ -1,3 +1,9 @@
+**1.10.1**
+
+Added `paypalButtonParams` to the `InitConfig` interface to allow the PayPal button to be enabled and configured. See more: https://docs.solidgate.com/payments/integrate/payment-form/paypal-button/ 
+
+***
+
 **1.10.0**
 
 Added PayPal support to the Payment Form

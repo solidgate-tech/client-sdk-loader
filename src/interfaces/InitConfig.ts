@@ -62,4 +62,12 @@ export default interface InitConfig {
     color: string
     type: string
   }>
+  paypalButtonParams?: {
+    enabled?: boolean
+    containerId?: string
+    color?: 'gold' | 'blue' | 'silver' | 'black'
+    shape?: 'pill' | 'rect' | 'sharp'
+    label?: 'paypal' | 'checkout' | 'buynow' | 'pay' | 'installment'
+    height?: number
+  }
 }
