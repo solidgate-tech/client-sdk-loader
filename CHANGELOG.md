@@ -1,3 +1,13 @@
+**1.10.0**
+
+Added PayPal support to the Payment Form
+
+- Extend an existing SDK events with the `paypal` entity: `mounted`, `success`, `fail`, `submit`, `interaction`;
+- Extended `orderStatus` with `entity: PayableEntity` and added the `APMOrderStatus` interface to the order status event's `response` property.
+- Added the `APMOrderStatus` interface corresponding to APM payments. For more information, see: https://api-docs.solidgate.com/#tag/Alternative-payment-methods/operation/webhook-apm-order-status
+
+***
+
 **1.9.0**
 
 SSR compatability
@@ -7,6 +17,8 @@ SSR compatability
 **1.8.1**
 Update Order Status error interface:
  - `error.message: string` -> `error.messages: string[]`
+
+***
 
 **1.8.0**
 

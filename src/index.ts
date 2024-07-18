@@ -3,6 +3,7 @@ import SdkMessage from './interfaces/SdkMessage'
 import InitConfig from './interfaces/InitConfig'
 import UpdateConfig from './interfaces/UpdateConfig'
 import Transaction from './interfaces/Transaction'
+import APMTransaction from './interfaces/APMTransaction'
 import MountedMessage from './interfaces/messages/MountedMessage'
 import ErrorMessage from './interfaces/messages/ErrorMessage'
 import FailMessage from './interfaces/messages/FailMessage'
@@ -20,6 +21,7 @@ import { ResignRequest, ResignFormConfig } from './interfaces/ResignConfig'
 import Message from './interfaces/messages/Message'
 import OrderShort from './interfaces/OrderShort'
 import OrderStatus from './interfaces/OrderStatus'
+import APMOrderStatus from './interfaces/APMOrderStatus'
 import ClientSdkInstance from './interfaces/ClientSdkInstance'
 
 import MessageType from './enums/MessageType'
@@ -65,7 +67,9 @@ export type {
   FailMessage,
   CardMessage,
   OrderStatus,
+  APMOrderStatus,
   Transaction,
+  APMTransaction,
   SdkMessage,
   InitConfig,
   ResignRequest,
