@@ -10,7 +10,8 @@ enum MessageType {
   Interaction = 'interaction',
   Submit = 'submit',
   CustomStylesAppended = 'customStylesAppended',
-  Card = 'card'
+  Card = 'card',
+  PaymentDetails = 'paymentDetails'
 }
 
 export default MessageType

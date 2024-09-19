@@ -16,9 +16,11 @@ import RedirectMessage from './interfaces/messages/RedirectMessage'
 import VerifyMessage from './interfaces/messages/VerifyMessage'
 import CustomStylesAppendedMessage from './interfaces/messages/CustomStylesAppendedMessage'
 import CardMessage from './interfaces/messages/CardMessage'
+import PaymentDetailsMessage from './interfaces/messages/PaymentDetailsMessage'
 import { ResignRequest, ResignFormConfig } from './interfaces/ResignConfig'
 
 import Message from './interfaces/messages/Message'
+import PriceBreakdown from './interfaces/PriceBreakdown'
 import OrderShort from './interfaces/OrderShort'
 import OrderStatus from './interfaces/OrderStatus'
 import APMOrderStatus from './interfaces/APMOrderStatus'
@@ -53,6 +55,7 @@ export {
 
 export type {
   CustomStylesAppendedMessage,
+  PaymentDetailsMessage,
   OrderStatusMessage,
   InteractionMessage,
   ClientSdkInstance,
@@ -68,6 +71,7 @@ export type {
   CardMessage,
   OrderStatus,
   APMOrderStatus,
+  PriceBreakdown,
   Transaction,
   APMTransaction,
   SdkMessage,

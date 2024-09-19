@@ -10,6 +10,7 @@ import CardMessage from './messages/CardMessage'
 import VerifyMessage from './messages/VerifyMessage'
 import RedirectMessage from './messages/RedirectMessage'
 import CustomStylesAppendedMessage from './messages/CustomStylesAppendedMessage'
+import PaymentDetailsMessage from './messages/PaymentDetailsMessage'
 
 import MessageType from '../enums/MessageType'
 
@@ -26,6 +27,7 @@ interface SdkMessage {
   [MessageType.Verify]: VerifyMessage
   [MessageType.Redirect]: RedirectMessage
   [MessageType.CustomStylesAppended]: CustomStylesAppendedMessage
+  [MessageType.PaymentDetails]: PaymentDetailsMessage
 }
 
 export default SdkMessage

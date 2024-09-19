@@ -58,6 +58,7 @@ export default interface InitConfig {
   }>
   applePayButtonParams?: Partial<{
     enabled: false
+    integrationType?: 'js' | 'css'
     containerId: string
     color: string
     type: string
