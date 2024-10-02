@@ -18,6 +18,7 @@ export default interface PriceBreakdown {
     source: 'productPrice' | 'discountPrice' | 'trialPrice'
     amount: string
     taxAmount: string
+    taxRate: number
     taxableAmount: string
     currency: string
     currencyIcon: string
