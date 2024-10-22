@@ -1,3 +1,5 @@
+import CardBrandIconStyle from '../enums/CardBrandIconStyle'
+
 type ResignFormAppearance = {
   autoFocus: false
   submitButtonText: string
@@ -6,6 +8,7 @@ type ResignFormAppearance = {
   resignCvvLabel: string
   resignCvvPlaceholder: string
   hideCvvNumbers: boolean
+  cardBrandIconStyle: CardBrandIconStyle
 }
 
 export type ResignRequest = {

@@ -1,4 +1,4 @@
-image: 533135976680.dkr.ecr.us-west-2.amazonaws.com/gitlab-runner-node:14.15.4-alpine3.12
+image: public.ecr.aws/docker/library/node:14.15.4-alpine3.12
 
 cache:
   paths:

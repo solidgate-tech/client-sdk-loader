@@ -1,3 +1,7 @@
+**1.13.0**
+
+Added **CardBrandIconStyle** to **ResignFormAppearance** to allow card brand icon customization on the Resign form
+
 **1.12.0**
 
 Added **priceBreakdown.taxRate** float to **PaymentDetails** event
