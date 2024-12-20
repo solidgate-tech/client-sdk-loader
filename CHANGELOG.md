@@ -1,3 +1,7 @@
+**1.14.0**
+
+Added **Paypal** to **formParams.cardBrands** to enable the PayPal icon to be displayed among the supported card brands on the Payment Form 
+
 **1.13.0**
 
 Added **CardBrandIconStyle** to **ResignFormAppearance** to allow card brand icon customization on the Resign form

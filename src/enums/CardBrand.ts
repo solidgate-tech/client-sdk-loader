@@ -21,7 +21,8 @@ export enum CardBrand {
   MADA = 'mada',
   Bancontact = 'bancontact',
   Interac = 'interac',
-  Bajaj = 'bajaj'
+  Bajaj = 'bajaj',
+  Paypal = 'paypal'
 }
 
 export default CardBrand
