@@ -22,7 +22,7 @@ Check our
   <tr>
     <td>
       <code>src</code> - source code<br>
-      <code>.husky/code> - pre-commit hooks<br>
+      <code>.husky</code> - pre-commit hooks<br>
       <code>package.json</code> – project metadata and dependency definitions<br>
     </td>
     <td>
