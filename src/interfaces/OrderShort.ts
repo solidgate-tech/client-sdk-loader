@@ -4,4 +4,5 @@ export default interface OrderShort {
   amount?: number
   subscription_id?: string
   order_id?: string
+  descriptor?: string
 }

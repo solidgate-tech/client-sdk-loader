@@ -1,3 +1,7 @@
+**1.16.0**
+
+Added **descriptor** to the **order** field of **Success** and **Fail** events
+
 **1.15.1**
 
 Updated README.md
