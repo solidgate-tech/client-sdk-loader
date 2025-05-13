@@ -1,15 +1,26 @@
 {
   "name": "@solidgate/client-sdk-loader",
-  "version": "1.16.0",
+  "version": "1.17.0",
   "license": "Apache-2.0",
   "description": "Solidgate client sdk loader",
   "repository": "https://github.com/solidgate-tech/client-sdk-loader",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
   "scripts": {
     "prepublish": "npm run build",
     "prepare": "husky install",
-    "build": "tsc",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs ",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
     "test": "jest",
     "lint": "eslint --ext js,ts,tsx src"
   },

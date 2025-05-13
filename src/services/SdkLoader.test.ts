@@ -87,4 +87,97 @@ describe('SdkLoader', () => {
 
     expect(scripts.length).toEqual(1)
   })
+
+  it('allows to initialize script with custom url', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const SdkLoader = require('./SdkLoader').default
+
+    SdkLoader.load('https://example.com/sdk.js')
+
+    const script = document.getElementById(
+      'solid-payment-form-source'
+    ) as HTMLScriptElement
+
+    expect(script.src).toEqual('https://example.com/sdk.js')
+  })
+
+  it('creates only one script after double initialization with different urls', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const SdkLoader = require('./SdkLoader').default
+
+    SdkLoader.load('https://example.com/sdk.js')
+    SdkLoader.load('https://example.com/sdk_v2.js')
+
+    const scripts = document.getElementsByTagName('script')
+
+    expect(scripts.length).toEqual(1)
+    expect(scripts[0].src).toEqual('https://example.com/sdk.js')
+  })
+
+  it('logs error if load called two times - without url and the with custom url', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const SdkLoader = require('./SdkLoader').default
+
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation()
+
+    SdkLoader.load()
+
+    SdkLoader.load('https://example.com/sdk.js')
+
+    expect(consoleErrorSpy).toHaveBeenCalledWith(
+      expect.stringContaining(
+        'SDK Initialization Error: A URL was provided for SDK initialization after a previous attempt without one.'
+      )
+    )
+
+    consoleErrorSpy.mockRestore()
+  })
+
+  it('doesnt logs error if load called two times - with custom url and without url', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const SdkLoader = require('./SdkLoader').default
+
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation()
+
+    SdkLoader.load('https://example.com/sdk123.js')
+
+    SdkLoader.load()
+
+    expect(consoleErrorSpy).not.toHaveBeenCalled()
+
+    consoleErrorSpy.mockRestore()
+  })
+
+  it('uses default url when called two times - without url and with custom url', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const SdkLoader = require('./SdkLoader').default
+    const consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation()
+
+    SdkLoader.load()
+
+    SdkLoader.load('https://example.com/sdk.js')
+
+    const script = document.getElementById(
+      'solid-payment-form-source'
+    ) as HTMLScriptElement
+
+    expect(script.src).toEqual('https://cdn.solidgate.com/js/solid-form.js')
+
+    consoleErrorSpy.mockRestore()
+  })
+
+  it('uses custom url when called two times - with custom url and with empty url', () => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const SdkLoader = require('./SdkLoader').default
+
+    SdkLoader.load('https://example.com/sdk.js')
+
+    SdkLoader.load()
+
+    const script = document.getElementById(
+      'solid-payment-form-source'
+    ) as HTMLScriptElement
+
+    expect(script.src).toEqual('https://example.com/sdk.js')
+  })
 })

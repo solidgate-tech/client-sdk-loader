@@ -10,12 +10,22 @@ export default class SdkLoader {
   static #CloudfrontSrc = 'https://cdn.solidgate.com/js/solid-form.js'
 
   static #loadAttempt: Promise<ClientSdk> | null = null
+  static #previousAttemptUrl: string | null = null
 
-  static load (): Promise<ClientSdk | null> {
+  static load (sdkUrl?: string): Promise<ClientSdk | null> {
     if (typeof window === 'undefined' || typeof document === 'undefined') {
       // Resolve to null when imported server side. This makes the module
       // safe to import in an isomorphic code base.
       return Promise.resolve(null)
+    }
+
+    const isPreviousCallWithoutUrl =
+      this.#previousAttemptUrl === this.#CloudfrontSrc
+    if (sdkUrl && isPreviousCallWithoutUrl) {
+      console.error(
+        `SDK Initialization Error: A URL was provided for SDK initialization after a previous attempt without one.
+        The SDK will proceed using the initial configuration without a URL.`
+      )
     }
 
     if (window.PaymentFormSdk) {
@@ -26,14 +36,17 @@ export default class SdkLoader {
       return this.#loadAttempt
     }
 
+    this.#previousAttemptUrl = sdkUrl || this.#CloudfrontSrc
+
+    const script = document.createElement('script')
+    script.async = true
+
+    script.src = sdkUrl || this.#CloudfrontSrc
+    script.id = 'solid-payment-form-source'
+    document.head.appendChild(script)
+
     this.#loadAttempt = new Promise<ClientSdk>((resolve, reject) => {
       try {
-        const script = document.createElement('script')
-        script.async = true
-
-        script.src = this.#CloudfrontSrc
-        script.id = 'solid-payment-form-source'
-
         script.onerror = (e) => {
           this.#loadAttempt = null
           reject(e)
@@ -42,8 +55,6 @@ export default class SdkLoader {
         script.onload = () => {
           resolve(window.PaymentFormSdk as ClientSdk)
         }
-
-        document.head.appendChild(script)
       } catch (e) {
         reject(e)
       }
