@@ -1,6 +1,7 @@
 import InitConfig from './InitConfig'
 import UpdateConfig from './UpdateConfig'
 import SdkMessage from './SdkMessage'
+import ApplyCouponPrices from './ApplyCouponPrices'
 
 import MessageType from '../enums/MessageType'
 import { ResignFormConfig, ResignRequest } from './ResignConfig'
@@ -19,4 +20,5 @@ export default interface ClientSdkInstance {
   unsubscribe(messageType: MessageType): void
   unsubscribeAll(): void
   submit(): void
+  applyCoupon(couponCode: string): Promise<ApplyCouponPrices>
 }
