@@ -8,5 +8,6 @@ export default interface CardMessage extends Message<MessageType.Card> {
     bin: string
     cardType: string
     bank: string
+    binCountry: string
   }
 }
