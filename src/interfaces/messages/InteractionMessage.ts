@@ -39,6 +39,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'googlePay'
       | 'applePay'
       | 'paypal'
+      | 'pix'
     interaction: InteractionType
   }
 } & InteractionMessageFormState
