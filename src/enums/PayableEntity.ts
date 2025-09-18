@@ -3,7 +3,8 @@ enum PayableEntity {
   GooglePay = 'googlebtn',
   Form = 'form',
   Resign = 'resign',
-  Paypal = 'paypal'
+  Paypal = 'paypal',
+  Pix = 'pix'
 }
 
 export default PayableEntity
