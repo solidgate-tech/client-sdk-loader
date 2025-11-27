@@ -71,4 +71,9 @@ export default interface InitConfig {
     label?: 'paypal' | 'checkout' | 'buynow' | 'pay' | 'installment'
     height?: number
   }
+  pixButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+  }
 }

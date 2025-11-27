@@ -1,3 +1,7 @@
+**1.22.0**
+
+Added **pixButtonParams** to the **InitConfig** interface
+
 **1.21.0**
 
 Added **cardCategory** to the **card** field of **Card** event
