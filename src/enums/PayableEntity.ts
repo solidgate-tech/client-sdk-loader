@@ -4,7 +4,8 @@ enum PayableEntity {
   Form = 'form',
   Resign = 'resign',
   Paypal = 'paypal',
-  Pix = 'pix'
+  Pix = 'pix',
+  Bizum = 'bizum'
 }
 
 export default PayableEntity

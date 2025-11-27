@@ -1,3 +1,7 @@
+**1.23.0**
+
+Added **bizumButtonParams** to the **InitConfig** interface
+
 **1.22.0**
 
 Added **pixButtonParams** to the **InitConfig** interface
