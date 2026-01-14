@@ -41,6 +41,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'paypal'
       | 'pix'
       | 'bizum'
+      | 'blik'
     interaction: InteractionType
   }
 } & InteractionMessageFormState

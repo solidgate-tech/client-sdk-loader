@@ -81,4 +81,10 @@ export default interface InitConfig {
     enabled?: boolean
     height?: number
   }
+  blikButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    theme?: 'light' | 'dark'
+    height?: number
+  }
 }

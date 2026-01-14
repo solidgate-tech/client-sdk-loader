@@ -11,4 +11,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'paypal'
     | 'pix'
     | 'bizum'
+    | 'blik'
 }

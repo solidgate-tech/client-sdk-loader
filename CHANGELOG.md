@@ -1,3 +1,7 @@
+**1.25.0**
+
+Added **blikButtonParams** to the **InitConfig** interface
+
 **1.24.0**
 
 Added **pageClose** type to the **InteractionType** enum
