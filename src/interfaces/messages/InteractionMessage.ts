@@ -42,6 +42,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'pix'
       | 'bizum'
       | 'blik'
+      | 'mbway'
     interaction: InteractionType
   }
 } & InteractionMessageFormState

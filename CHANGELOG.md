@@ -1,3 +1,11 @@
+**1.26.0**
+
+Added **mbway** support:
+- Added **Mbway** to the **PayableEntity** enum
+- Added **mbway** to the **entity** field of **MountedMessage** event
+- Added **mbway** to the **name** field of **InteractionMessage** event
+- Added **mbwayButtonParams** to the **InitConfig** interface
+
 **1.25.0**
 
 Added **blikButtonParams** to the **InitConfig** interface

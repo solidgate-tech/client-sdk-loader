@@ -87,4 +87,9 @@ export default interface InitConfig {
     theme?: 'light' | 'dark'
     height?: number
   }
+  mbwayButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+  }
 }

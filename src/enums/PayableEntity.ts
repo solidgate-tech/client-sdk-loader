@@ -6,7 +6,8 @@ enum PayableEntity {
   Paypal = 'paypal',
   Pix = 'pix',
   Bizum = 'bizum',
-  Blik = 'blik'
+  Blik = 'blik',
+  Mbway = 'mbway'
 }
 
 export default PayableEntity
