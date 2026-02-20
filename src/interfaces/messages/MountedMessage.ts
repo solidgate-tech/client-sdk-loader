@@ -10,6 +10,7 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'resign'
     | 'paypal'
     | 'pix'
+    | 'pix-qr'
     | 'bizum'
     | 'blik'
     | 'mbway'

@@ -5,6 +5,7 @@ enum PayableEntity {
   Resign = 'resign',
   Paypal = 'paypal',
   Pix = 'pix',
+  PixQr = 'pix-qr',
   Bizum = 'bizum',
   Blik = 'blik',
   Mbway = 'mbway'

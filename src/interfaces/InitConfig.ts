@@ -76,6 +76,11 @@ export default interface InitConfig {
     enabled?: boolean
     height?: number
   }
+  pixQrButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+  }
   bizumButtonParams?: {
     containerId?: string
     enabled?: boolean

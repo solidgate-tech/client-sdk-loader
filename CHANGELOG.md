@@ -1,3 +1,11 @@
+**1.27.0**
+
+Added **Pix QR** support:
+- Added **PixQr** to the **PayableEntity** enum
+- Added **pix-qr** to the **entity** field of **MountedMessage** event
+- Added **pix-qr** to the **name** field of **InteractionMessage** event
+- Added **pixQrButtonParams** to the **InitConfig** interface
+
 **1.26.0**
 
 Added **mbway** support:
