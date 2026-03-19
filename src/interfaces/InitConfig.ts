@@ -33,12 +33,14 @@ export default interface InitConfig {
       googleFontLink: string
       cardNumberLabel: string
       cardCvvLabel: string
+      cardHolderLabel: string
       cardExpiryDateLabel: string
       zipLabel: string
       emailLabel: string
       zipCodeLabel: string
       cardNumberPlaceholder: string
       cardCvvPlaceholder: string
+      cardHolderPlaceholder: string
       cardExpiryDatePlaceholder: string
       zipPlaceholder: string
       emailPlaceholder: string
