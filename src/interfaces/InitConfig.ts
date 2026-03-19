@@ -18,7 +18,7 @@ export default interface InitConfig {
   styles?: Record<string, unknown>
   formParams?: Partial<
     {
-      enabled: false
+      enabled: boolean
       autoFocus: boolean
       submitButtonText: string
       isCardHolderVisible: boolean
@@ -51,13 +51,13 @@ export default interface InitConfig {
       | ['PAN_ONLY', 'CRYPTOGRAM_3DS']
       | ['PAN_ONLY']
       | ['CRYPTOGRAM_3DS']
-    enabled: false
+    enabled: boolean
     containerId: string
     color: string
     type: string
   }>
   applePayButtonParams?: Partial<{
-    enabled: false
+    enabled: boolean
     integrationType?: 'js' | 'css'
     containerId: string
     color: string
