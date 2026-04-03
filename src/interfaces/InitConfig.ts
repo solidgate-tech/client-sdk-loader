@@ -99,4 +99,8 @@ export default interface InitConfig {
     enabled?: boolean
     height?: number
   }
+  cashAppButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+  }
 }

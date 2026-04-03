@@ -14,4 +14,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'bizum'
     | 'blik'
     | 'mbway'
+    | 'cashapp'
 }

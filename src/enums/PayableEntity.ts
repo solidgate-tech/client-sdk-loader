@@ -8,7 +8,8 @@ enum PayableEntity {
   PixQr = 'pix-qr',
   Bizum = 'bizum',
   Blik = 'blik',
-  Mbway = 'mbway'
+  Mbway = 'mbway',
+  CashApp = 'cashapp'
 }
 
 export default PayableEntity

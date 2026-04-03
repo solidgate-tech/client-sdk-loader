@@ -1,3 +1,11 @@
+**1.30.0**
+
+Added **CashApp** support:
+- Added **CashApp** to the **PayableEntity** enum
+- Added **cashapp** to the **entity** field of **MountedMessage** event
+- Added **cashapp** to the **name** field of **InteractionMessage** event
+- Added **cashAppButtonParams** to the **InitConfig** interface
+
 **1.29.0**
 
 Added **cardHolderPlaceholder** and **cardHolderLabel** to the **formParams** of **InitConfig** interface
