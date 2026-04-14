@@ -103,4 +103,9 @@ export default interface InitConfig {
     containerId?: string
     enabled?: boolean
   }
+  pixAutomaticoButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+  }
 }

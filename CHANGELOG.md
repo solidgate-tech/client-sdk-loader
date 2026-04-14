@@ -1,3 +1,11 @@
+**1.31.0**
+
+Added **Pix Automático** support:
+- Added **PixAutomatico** to the **PayableEntity** enum
+- Added **pix-automatico** to the **entity** field of **MountedMessage** event
+- Added **pix-automatico** to the **name** field of **InteractionMessage** event
+- Added **pixAutomaticoButtonParams** to the **InitConfig** interface
+
 **1.30.0**
 
 Added **CashApp** support:

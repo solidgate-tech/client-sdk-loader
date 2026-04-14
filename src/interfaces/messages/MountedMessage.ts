@@ -15,4 +15,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'blik'
     | 'mbway'
     | 'cashapp'
+    | 'pix-automatico'
 }
