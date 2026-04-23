@@ -1,3 +1,9 @@
+**1.32.0**
+
+Added **reset mode** support for APM buttons' modals:
+- Added **ResetRequested** to the **InteractionType** enum (emitted via the existing **InteractionMessage** event)
+- Added **resetEnabled** flag to **pixButtonParams**, **pixQrButtonParams**, **pixAutomaticoButtonParams**, and **blikButtonParams** in the **InitConfig** interface
+
 **1.31.0**
 
 Added **Pix Automático** support:

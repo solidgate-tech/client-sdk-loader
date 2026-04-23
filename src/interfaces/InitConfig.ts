@@ -77,11 +77,13 @@ export default interface InitConfig {
     containerId?: string
     enabled?: boolean
     height?: number
+    resetEnabled?: boolean
   }
   pixQrButtonParams?: {
     containerId?: string
     enabled?: boolean
     height?: number
+    resetEnabled?: boolean
   }
   bizumButtonParams?: {
     containerId?: string
@@ -93,6 +95,7 @@ export default interface InitConfig {
     enabled?: boolean
     theme?: 'light' | 'dark'
     height?: number
+    resetEnabled?: boolean
   }
   mbwayButtonParams?: {
     containerId?: string
@@ -107,5 +110,6 @@ export default interface InitConfig {
     containerId?: string
     enabled?: boolean
     height?: number
+    resetEnabled?: boolean
   }
 }
