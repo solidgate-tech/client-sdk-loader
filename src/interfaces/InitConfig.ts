@@ -79,6 +79,13 @@ export default interface InitConfig {
     height?: number
     resetEnabled?: boolean
   }
+  upiButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+    resetEnabled?: boolean
+    type?: 'plain' | 'short'
+  }
   pixQrButtonParams?: {
     containerId?: string
     enabled?: boolean

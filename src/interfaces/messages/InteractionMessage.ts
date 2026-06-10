@@ -40,6 +40,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'applePay'
       | 'paypal'
       | 'pix'
+      | 'upi'
       | 'pix-qr'
       | 'bizum'
       | 'blik'

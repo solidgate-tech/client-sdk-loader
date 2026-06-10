@@ -1,3 +1,11 @@
+**1.33.0**
+
+Added **UPI** payment method support:
+- Added **Upi** to the **PayableEntity** enum
+- Added **upi** to the **entity** field of **MountedMessage** event
+- Added **upi** to the **name** field of **InteractionMessage** event
+- Added **upiButtonParams** (containerId, enabled, height, resetEnabled, type) to the **InitConfig** interface
+
 **1.32.0**
 
 Added **reset mode** support for APM buttons' modals:
