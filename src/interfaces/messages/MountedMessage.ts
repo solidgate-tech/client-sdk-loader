@@ -17,4 +17,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'mbway'
     | 'cashapp'
     | 'pix-automatico'
+    | 'clicktopay'
 }

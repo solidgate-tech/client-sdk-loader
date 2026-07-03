@@ -1,3 +1,11 @@
+**1.34.0**
+
+Added **Click to Pay** support:
+- Added **ClickToPay** to the **PayableEntity** enum
+- Added **clicktopay** to the **entity** field of **MountedMessage** event
+- Added **clicktopay** to the **name** field of **InteractionMessage** event
+- Added **clickToPayButtonParams** (enabled, height, saveRecognitionToken, supportedCardNetworks) to the **InitConfig** interface
+
 **1.33.0**
 
 Added **UPI** payment method support:

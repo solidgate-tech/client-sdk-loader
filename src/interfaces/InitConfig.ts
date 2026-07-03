@@ -119,4 +119,10 @@ export default interface InitConfig {
     height?: number
     resetEnabled?: boolean
   }
+  clickToPayButtonParams?: {
+    enabled?: boolean
+    height?: number
+    saveRecognitionToken?: boolean
+    supportedCardNetworks?: ('mastercard' | 'visa' | 'amex' | 'discover')[]
+  }
 }

@@ -2,7 +2,7 @@
 
 This repository is wrapper for the Solidgate Client Software Development Kit (SDK).
 
-It supports rendering payment forms and resign forms, including custom container elements for <a href="https://docs.solidgate.com/payments/integrate/payment-form/google-pay-button/" target="_blank">Google Pay</a>, <a href="https://docs.solidgate.com/payments/integrate/payment-form/apple-pay-button/" target="_blank">Apple Pay</a>, or <a href="https://docs.solidgate.com/payments/integrate/payment-form/paypal-button/" target="_blank">PayPal</a> buttons.
+It supports rendering payment forms and resign forms, including custom container elements for <a href="https://docs.solidgate.com/payments/integrate/payment-form/google-pay-button/" target="_blank">Google Pay</a>, <a href="https://docs.solidgate.com/payments/integrate/payment-form/apple-pay-button/" target="_blank">Apple Pay</a>, <a href="https://docs.solidgate.com/payments/integrate/payment-form/paypal-button/" target="_blank">PayPal</a>, or Click to Pay buttons.
 
 Check our
 * <a href="https://docs.solidgate.com/" target="_blank">Payment guide</a> to understand business value better

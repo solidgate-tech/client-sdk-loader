@@ -47,6 +47,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'mbway'
       | 'cashapp'
       | 'pix-automatico'
+      | 'clicktopay'
     interaction: InteractionType
   }
 } & InteractionMessageFormState

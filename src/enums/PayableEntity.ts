@@ -11,7 +11,8 @@ enum PayableEntity {
   Blik = 'blik',
   Mbway = 'mbway',
   CashApp = 'cashapp',
-  PixAutomatico = 'pix-automatico'
+  PixAutomatico = 'pix-automatico',
+  ClickToPay = 'clicktopay'
 }
 
 export default PayableEntity
