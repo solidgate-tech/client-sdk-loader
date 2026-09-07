@@ -18,6 +18,16 @@ import CustomStylesAppendedMessage from './interfaces/messages/CustomStylesAppen
 import CardMessage from './interfaces/messages/CardMessage'
 import PaymentDetailsMessage from './interfaces/messages/PaymentDetailsMessage'
 import { ResignRequest, ResignFormConfig } from './interfaces/ResignConfig'
+import {
+  WalletCardTypeEventName,
+  WalletCardTypeWallet,
+  WalletCardTypeFunding,
+  WalletCardTypeCard,
+  WalletCardTypeEventData,
+  WalletCardTypeEvent,
+  WalletCardTypeSideEffect,
+  WalletCardTypeSubscriber
+} from './interfaces/WalletCardType'
 
 import Message from './interfaces/messages/Message'
 import PriceBreakdown from './interfaces/PriceBreakdown'
@@ -82,5 +92,13 @@ export type {
   ResignFormConfig,
   OrderShort,
   ClientSdk,
-  Message
+  Message,
+  WalletCardTypeEventName,
+  WalletCardTypeWallet,
+  WalletCardTypeFunding,
+  WalletCardTypeCard,
+  WalletCardTypeEventData,
+  WalletCardTypeEvent,
+  WalletCardTypeSideEffect,
+  WalletCardTypeSubscriber
 }

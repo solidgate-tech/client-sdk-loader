@@ -57,6 +57,9 @@ export default interface InitConfig {
     containerId: string
     color: string
     type: string
+    totalPriceStatus:
+      | 'TOTAL_PRICE_STATUS_FINAL'
+      | 'TOTAL_PRICE_STATUS_ESTIMATED'
   }>
   applePayButtonParams?: Partial<{
     enabled: boolean

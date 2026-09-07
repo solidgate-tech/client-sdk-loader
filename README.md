@@ -64,6 +64,31 @@ async function init() {
 }
 ```
 
+### Wallet card type
+
+Apple Pay and Google Pay report the payer's card funding type before the charge.
+Subscribe to `walletCardType` to inspect it and, optionally, pause the wallet flow
+with `pauseUntil` while you call an update intent method (`update`, `updateCheckout`).
+The side effect has a 25 s budget, measured from the moment the event fired:
+
+```typescript
+form.on('walletCardType', (event, pauseUntil) => {
+  const { wallet, card } = event.data // wallet: 'applePay' | 'googlePay'
+
+  if (card.type === 'unknown') {
+    return // no intent update - the wallet continues immediately
+  }
+
+  pauseUntil(async () => {
+    await form.update({ partialIntent: intentFor(card.type) })
+  })
+})
+```
+
+Calling an update intent method inside the event on Google Pay also requires
+`googlePayButtonParams: { totalPriceStatus: 'TOTAL_PRICE_STATUS_ESTIMATED' }` in the
+init config, so the sheet renders the amount as an estimate.
+
 ## Development
 
 Build:

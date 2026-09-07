@@ -1,3 +1,10 @@
+**1.35.0**
+
+Added **walletCardType** event support:
+- Added the **walletCardType** subscription overload (subscriber + **pauseUntil**) to **ClientSdkInstance.on** and **ClientSdkInstance.unsubscribe**
+- Added **WalletCardTypeEvent**, **WalletCardTypeSubscriber**, **WalletCardTypeCard**, **WalletCardTypeWallet**, **WalletCardTypeFunding**, **WalletCardTypeSideEffect** types
+- Added **totalPriceStatus** (TOTAL_PRICE_STATUS_FINAL, TOTAL_PRICE_STATUS_ESTIMATED) to **googlePayButtonParams** in the **InitConfig** interface
+
 **1.34.0**
 
 Added **Click to Pay** support:
