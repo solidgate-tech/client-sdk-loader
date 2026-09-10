@@ -17,7 +17,23 @@ import VerifyMessage from './interfaces/messages/VerifyMessage'
 import CustomStylesAppendedMessage from './interfaces/messages/CustomStylesAppendedMessage'
 import CardMessage from './interfaces/messages/CardMessage'
 import PaymentDetailsMessage from './interfaces/messages/PaymentDetailsMessage'
+import InvoicePreviewMessage from './interfaces/messages/InvoicePreviewMessage'
 import { ResignRequest, ResignFormConfig } from './interfaces/ResignConfig'
+import {
+  CheckoutInvoicePreview,
+  CheckoutInvoicePreviewAmounts,
+  CheckoutInvoicePreviewTax,
+  CheckoutInvoicePreviewLineItem,
+  UpdateCheckoutResult
+} from './interfaces/CheckoutInvoicePreview'
+import {
+  UpdateCheckoutConfig,
+  UpdateCheckoutLineItem,
+  UpdateCheckoutDiscount,
+  UpdateCheckoutTrial,
+  UpdateCheckoutTrialPeriod,
+  UpdateCheckoutSubscriptionData
+} from './interfaces/UpdateCheckoutConfig'
 import {
   WalletCardTypeEventName,
   WalletCardTypeWallet,
@@ -68,6 +84,7 @@ export {
 export type {
   CustomStylesAppendedMessage,
   PaymentDetailsMessage,
+  InvoicePreviewMessage,
   OrderStatusMessage,
   InteractionMessage,
   ClientSdkInstance,
@@ -100,5 +117,16 @@ export type {
   WalletCardTypeEventData,
   WalletCardTypeEvent,
   WalletCardTypeSideEffect,
-  WalletCardTypeSubscriber
+  WalletCardTypeSubscriber,
+  CheckoutInvoicePreview,
+  CheckoutInvoicePreviewAmounts,
+  CheckoutInvoicePreviewTax,
+  CheckoutInvoicePreviewLineItem,
+  UpdateCheckoutResult,
+  UpdateCheckoutConfig,
+  UpdateCheckoutLineItem,
+  UpdateCheckoutDiscount,
+  UpdateCheckoutTrial,
+  UpdateCheckoutTrialPeriod,
+  UpdateCheckoutSubscriptionData
 }

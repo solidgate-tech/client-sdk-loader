@@ -1,3 +1,12 @@
+**1.36.0**
+
+Added **invoicePreview** event and **updateCheckout** method support:
+- Added **InvoicePreview** to the **MessageType** enum and **invoicePreview** to the **SdkMessage** map
+- Added the **InvoicePreviewMessage** event type with the **invoicePreview** payload
+- Added **CheckoutInvoicePreview**, **CheckoutInvoicePreviewAmounts**, **CheckoutInvoicePreviewTax**, **CheckoutInvoicePreviewLineItem** types
+- Added the **updateCheckout** method to the **ClientSdkInstance** interface
+- Added **UpdateCheckoutConfig**, **UpdateCheckoutLineItem**, **UpdateCheckoutDiscount**, **UpdateCheckoutSubscriptionData**, **UpdateCheckoutTrial**, **UpdateCheckoutTrialPeriod**, **UpdateCheckoutResult** types
+
 **1.35.0**
 
 Added **walletCardType** event support:

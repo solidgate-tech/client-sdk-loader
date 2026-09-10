@@ -11,7 +11,8 @@ enum MessageType {
   Submit = 'submit',
   CustomStylesAppended = 'customStylesAppended',
   Card = 'card',
-  PaymentDetails = 'paymentDetails'
+  PaymentDetails = 'paymentDetails',
+  InvoicePreview = 'invoicePreview'
 }
 
 export default MessageType

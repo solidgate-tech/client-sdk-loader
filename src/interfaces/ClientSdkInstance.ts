@@ -2,6 +2,8 @@ import InitConfig from './InitConfig'
 import UpdateConfig from './UpdateConfig'
 import SdkMessage from './SdkMessage'
 import ApplyCouponPrices from './ApplyCouponPrices'
+import { UpdateCheckoutConfig } from './UpdateCheckoutConfig'
+import { UpdateCheckoutResult } from './CheckoutInvoicePreview'
 
 import MessageType from '../enums/MessageType'
 import { ResignFormConfig, ResignRequest } from './ResignConfig'
@@ -17,6 +19,7 @@ export default interface ClientSdkInstance {
     config?: ResignFormConfig
   ): Promise<ClientSdkInstance>
   update(config: UpdateConfig): Promise<void>
+  updateCheckout(config: UpdateCheckoutConfig): Promise<UpdateCheckoutResult>
   on(event: WalletCardTypeEventName, subscriber: WalletCardTypeSubscriber): void
   on<T extends MessageType>(
     event: T,

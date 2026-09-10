@@ -11,6 +11,7 @@ import VerifyMessage from './messages/VerifyMessage'
 import RedirectMessage from './messages/RedirectMessage'
 import CustomStylesAppendedMessage from './messages/CustomStylesAppendedMessage'
 import PaymentDetailsMessage from './messages/PaymentDetailsMessage'
+import InvoicePreviewMessage from './messages/InvoicePreviewMessage'
 
 import MessageType from '../enums/MessageType'
 
@@ -28,6 +29,7 @@ interface SdkMessage {
   [MessageType.Redirect]: RedirectMessage
   [MessageType.CustomStylesAppended]: CustomStylesAppendedMessage
   [MessageType.PaymentDetails]: PaymentDetailsMessage
+  [MessageType.InvoicePreview]: InvoicePreviewMessage
 }
 
 export default SdkMessage
