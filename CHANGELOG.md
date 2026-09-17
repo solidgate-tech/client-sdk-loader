@@ -1,3 +1,8 @@
+**1.37.0**
+
+Added **dark theme** support for the **MB Way** button:
+- Added **theme** (`light` | `dark`, defaults to `light`) to **mbwayButtonParams** in the **InitConfig** interface
+
 **1.36.0**
 
 Added **invoicePreview** event and **updateCheckout** method support:

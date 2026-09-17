@@ -111,6 +111,7 @@ export default interface InitConfig {
     containerId?: string
     enabled?: boolean
     height?: number
+    theme?: 'light' | 'dark'
   }
   cashAppButtonParams?: {
     containerId?: string
