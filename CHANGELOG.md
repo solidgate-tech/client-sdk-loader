@@ -1,3 +1,8 @@
+**1.38.0**
+
+Added **last4** to the **card** event:
+- Added **last4** (last four digits of the PAN) to the **card** payload of the **CardMessage** event type
+
 **1.37.0**
 
 Added **dark theme** support for the **MB Way** button:
