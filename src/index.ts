@@ -14,6 +14,7 @@ import SubmitMessage from './interfaces/messages/SubmitMessage'
 import InteractionMessage from './interfaces/messages/InteractionMessage'
 import RedirectMessage from './interfaces/messages/RedirectMessage'
 import VerifyMessage from './interfaces/messages/VerifyMessage'
+import ProcessingMessage from './interfaces/messages/ProcessingMessage'
 import CustomStylesAppendedMessage from './interfaces/messages/CustomStylesAppendedMessage'
 import CardMessage from './interfaces/messages/CardMessage'
 import PaymentDetailsMessage from './interfaces/messages/PaymentDetailsMessage'
@@ -92,6 +93,7 @@ export type {
   MountedMessage,
   SuccessMessage,
   VerifyMessage,
+  ProcessingMessage,
   ResizeMessage,
   SubmitMessage,
   ErrorMessage,

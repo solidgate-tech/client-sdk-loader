@@ -8,6 +8,7 @@ import SubmitMessage from './messages/SubmitMessage'
 import InteractionMessage from './messages/InteractionMessage'
 import CardMessage from './messages/CardMessage'
 import VerifyMessage from './messages/VerifyMessage'
+import ProcessingMessage from './messages/ProcessingMessage'
 import RedirectMessage from './messages/RedirectMessage'
 import CustomStylesAppendedMessage from './messages/CustomStylesAppendedMessage'
 import PaymentDetailsMessage from './messages/PaymentDetailsMessage'
@@ -26,6 +27,7 @@ interface SdkMessage {
   [MessageType.Interaction]: InteractionMessage
   [MessageType.Card]: CardMessage
   [MessageType.Verify]: VerifyMessage
+  [MessageType.Processing]: ProcessingMessage
   [MessageType.Redirect]: RedirectMessage
   [MessageType.CustomStylesAppended]: CustomStylesAppendedMessage
   [MessageType.PaymentDetails]: PaymentDetailsMessage

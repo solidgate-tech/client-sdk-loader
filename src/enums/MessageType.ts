@@ -7,6 +7,7 @@ enum MessageType {
   Resize = 'resize',
   Redirect = 'formRedirect',
   Verify = 'verify',
+  Processing = 'processing',
   Interaction = 'interaction',
   Submit = 'submit',
   CustomStylesAppended = 'customStylesAppended',

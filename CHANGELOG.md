@@ -1,3 +1,9 @@
+**1.39.0**
+
+Added **processing** event:
+- Added **Processing** to the **MessageType** enum and **processing** to the **SdkMessage** map
+- Added the **ProcessingMessage** event type with the **order** (OrderShort) and **entity** (PayableEntity) payload, emitted once per payment when the order first enters the processing status
+
 **1.38.0**
 
 Added **last4** to the **card** event:

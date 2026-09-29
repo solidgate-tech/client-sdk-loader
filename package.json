@@ -1,6 +1,6 @@
 {
   "name": "@solidgate/client-sdk-loader",
-  "version": "1.38.0",
+  "version": "1.39.0",
   "license": "Apache-2.0",
   "description": "Solidgate client sdk loader",
   "repository": "https://github.com/solidgate-tech/client-sdk-loader",
@@ -47,7 +47,6 @@
     "prettier": "^2.0.4",
     "typescript": "^4.5.0"
   },
-
   "jest": {
     "verbose": true,
     "testEnvironment": "jsdom"
