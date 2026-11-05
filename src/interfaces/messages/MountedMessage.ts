@@ -18,4 +18,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'cashapp'
     | 'pix-automatico'
     | 'clicktopay'
+    | 'klarna-network'
 }

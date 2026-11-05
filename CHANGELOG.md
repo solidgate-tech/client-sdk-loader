@@ -1,3 +1,11 @@
+**1.40.0**
+
+Added **Klarna Network** payment method support:
+- Added **KlarnaNetwork** to the **PayableEntity** enum
+- Added **klarna-network** to the **entity** field of **MountedMessage** event
+- Added **klarna-network** to the **name** field of **InteractionMessage** event
+- Added **klarnaNetworkButtonParams** (containerId, enabled, theme, shape, intents, height) to the **InitConfig** interface
+
 **1.39.0**
 
 Added **processing** event:

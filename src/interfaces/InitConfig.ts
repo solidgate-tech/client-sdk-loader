@@ -129,4 +129,12 @@ export default interface InitConfig {
     saveRecognitionToken?: boolean
     supportedCardNetworks?: ('mastercard' | 'visa' | 'amex' | 'discover')[]
   }
+  klarnaNetworkButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    theme?: 'default' | 'light' | 'dark' | 'outlined'
+    shape?: 'default' | 'pill' | 'rect'
+    intents?: ('PAY' | 'SUBSCRIBE')[]
+    height?: number
+  }
 }
