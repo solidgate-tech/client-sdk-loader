@@ -137,4 +137,10 @@ export default interface InitConfig {
     intents?: ('PAY' | 'SUBSCRIBE')[]
     height?: number
   }
+  gcashButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+    resetEnabled?: boolean
+  }
 }

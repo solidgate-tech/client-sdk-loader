@@ -1,3 +1,11 @@
+**1.41.0**
+
+Added **GCash** payment method support:
+- Added **GCash** to the **PayableEntity** enum
+- Added **gcash** to the **entity** field of **MountedMessage** event
+- Added **gcash** to the **name** field of **InteractionMessage** event
+- Added **gcashButtonParams** (containerId, enabled, height, resetEnabled) to the **InitConfig** interface
+
 **1.40.0**
 
 Added **Klarna Network** payment method support:

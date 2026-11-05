@@ -19,4 +19,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'pix-automatico'
     | 'clicktopay'
     | 'klarna-network'
+    | 'gcash'
 }

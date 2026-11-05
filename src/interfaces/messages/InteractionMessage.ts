@@ -49,6 +49,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'pix-automatico'
       | 'clicktopay'
       | 'klarna-network'
+      | 'gcash'
     interaction: InteractionType
   }
 } & InteractionMessageFormState
