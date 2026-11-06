@@ -143,4 +143,10 @@ export default interface InitConfig {
     height?: number
     resetEnabled?: boolean
   }
+  satispayButtonParams?: {
+    containerId?: string
+    enabled?: boolean
+    height?: number
+    theme?: 'dark' | 'light' | 'red'
+  }
 }

@@ -14,7 +14,8 @@ enum PayableEntity {
   PixAutomatico = 'pix-automatico',
   ClickToPay = 'clicktopay',
   KlarnaNetwork = 'klarna-network',
-  GCash = 'gcash'
+  GCash = 'gcash',
+  Satispay = 'satispay'
 }
 
 export default PayableEntity

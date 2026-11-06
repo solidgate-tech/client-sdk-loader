@@ -20,4 +20,5 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'clicktopay'
     | 'klarna-network'
     | 'gcash'
+    | 'satispay'
 }

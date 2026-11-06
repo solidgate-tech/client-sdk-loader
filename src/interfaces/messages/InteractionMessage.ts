@@ -50,6 +50,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'clicktopay'
       | 'klarna-network'
       | 'gcash'
+      | 'satispay'
     interaction: InteractionType
   }
 } & InteractionMessageFormState

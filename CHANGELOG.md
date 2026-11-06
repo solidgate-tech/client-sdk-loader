@@ -1,3 +1,11 @@
+**1.42.0**
+
+Added **Satispay** payment method support:
+- Added **Satispay** to the **PayableEntity** enum
+- Added **satispay** to the **entity** field of **MountedMessage** event
+- Added **satispay** to the **name** field of **InteractionMessage** event
+- Added **satispayButtonParams** (containerId, enabled, height, theme) to the **InitConfig** interface
+
 **1.41.0**
 
 Added **GCash** payment method support:
