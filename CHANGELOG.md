@@ -1,3 +1,9 @@
+**1.43.0**
+
+Added **resetEnabled** for the **Bizum** and **MB Way** buttons:
+- Added **resetEnabled** to **bizumButtonParams** in the **InitConfig** interface
+- Added **resetEnabled** to **mbwayButtonParams** in the **InitConfig** interface
+
 **1.42.0**
 
 Added **Satispay** payment method support:

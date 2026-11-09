@@ -99,6 +99,7 @@ export default interface InitConfig {
     containerId?: string
     enabled?: boolean
     height?: number
+    resetEnabled?: boolean
   }
   blikButtonParams?: {
     containerId?: string
@@ -112,6 +113,7 @@ export default interface InitConfig {
     enabled?: boolean
     height?: number
     theme?: 'light' | 'dark'
+    resetEnabled?: boolean
   }
   cashAppButtonParams?: {
     containerId?: string
