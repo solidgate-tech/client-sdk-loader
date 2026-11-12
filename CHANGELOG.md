@@ -1,3 +1,10 @@
+**1.44.0**
+
+Added **BLIK Recurring** payment method support:
+- Added **BlikRecurring** to the **PayableEntity** enum
+- Added **blik-recurring** to the **entity** field of **MountedMessage** event
+- Added **blik-recurring** to the **name** field of **InteractionMessage** event
+
 **1.43.0**
 
 Added **resetEnabled** for the **Bizum** and **MB Way** buttons:

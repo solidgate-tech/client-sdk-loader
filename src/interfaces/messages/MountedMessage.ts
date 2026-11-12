@@ -14,6 +14,7 @@ export default interface MountedMessage extends Message<MessageType.Mounted> {
     | 'pix-qr'
     | 'bizum'
     | 'blik'
+    | 'blik-recurring'
     | 'mbway'
     | 'cashapp'
     | 'pix-automatico'

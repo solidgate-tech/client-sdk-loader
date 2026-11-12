@@ -9,6 +9,7 @@ enum PayableEntity {
   PixQr = 'pix-qr',
   Bizum = 'bizum',
   Blik = 'blik',
+  BlikRecurring = 'blik-recurring',
   Mbway = 'mbway',
   CashApp = 'cashapp',
   PixAutomatico = 'pix-automatico',

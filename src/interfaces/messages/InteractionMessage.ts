@@ -44,6 +44,7 @@ type InteractionMessage = Message<MessageType.Interaction> & {
       | 'pix-qr'
       | 'bizum'
       | 'blik'
+      | 'blik-recurring'
       | 'mbway'
       | 'cashapp'
       | 'pix-automatico'
