@@ -1,5 +1,5 @@
 enum AdditionalFieldName {
-  ZipCode = 'zipСode',
+  ZipCode = 'zipCode',
   ArgentinaDni = 'argentinaDni',
   BangladeshNic = 'bangladeshNic',
   BoliviaCi = 'boliviaCi',

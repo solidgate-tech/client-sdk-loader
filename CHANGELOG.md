@@ -1,3 +1,7 @@
+**1.44.1**
+
+Fixed the **ZipCode** value of the **AdditionalFieldName** enum: it was spelled with a Cyrillic "C" (U+0421) instead of the Latin one and is now `zipCode`, matching the name the payment form sends in **InteractionMessage** events and the **zipCodeLabel** / **zipCodePlaceholder** keys of **formParams**
+
 **1.44.0**
 
 Added **BLIK Recurring** payment method support:
